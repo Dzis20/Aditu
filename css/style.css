@@ -1,0 +1,42 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: grey;
+    line-height: 1.647;
+}
+  
+.container {
+    max-width: 1584px;
+    margin: 0 auto;
+}
+p.logo {
+    font-family:"Lobster1.4"
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 61px;
+    color: rgb(255, 255, 255);
+    line-height: 0.885;
+}
+  
+h2.section-title {
+    font-size: 31px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    line-height: 0.806;
+} 
+h3 {
+    font-size: 27px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(175, 175, 175);
+    line-height: 0.926;
+} 
+span.for-title {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+/* npm install normalize.css */
