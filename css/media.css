@@ -131,13 +131,30 @@
 }
 
 @media (max-width: 767px) {
+    h1.slider-head {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .slide-text a {
+        width: 137px;
+        height: 44px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        line-height: 0.704;
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+    }
     form.header-form {
         position: fixed;
         width: 50%;
         padding-top: 125px;
         left: -100%;
         padding-left: 40px;
-        
+        transition: 1s;
     }
     form.header-form svg {
         display: none;
@@ -149,4 +166,21 @@
     form.header-form input {
         width: 100%;
     }
+}
+@media (max-width: 650px) {
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .slide-content {
+        flex-direction: column;
+        padding-top: 50px;
+        margin-bottom: 70px;
+    }
+    .slide-content img {
+        padding-right: 0;
+    }
+}
+@media (max-width: 500px) {
+
 }
