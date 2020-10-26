@@ -7,10 +7,19 @@
     .container {
         max-width: 1024px
     }
+    ul.main-nav {
+        padding: 10px 0;
+    }
+    ul.main-nav li.main-nav-item {
+        padding: 0;
+    }
 }
 @media (max-width: 1024px) {
     .containder {
         max-width: 900px;
+    }
+    form.header-form input {
+        width: 300px;
     }
 }
 @media (max-width: 900px) {
@@ -18,9 +27,12 @@
         max-width: 767px;
         padding: 0 20px;
     }
-}
-
-@media (max-width: 767px) {
+    .header {
+        padding: 10px 0;
+    }
+    form.header-form input {
+        width: 250px;
+    }
     body.lock {
         overflow: hidden;
     }
@@ -33,14 +45,15 @@
         width: 33px;
         height: 20px;
         z-index: 3;
+        margin-left: 20px;
     }
     .burger-menu span {
         position: absolute;
         display: block;
         width: 100%;
-        height: 3.84px;
+        height: 3px;
         left: 0;
-        top: 8px;
+        top: 8.5px;
         background-color: #fff;
         transition: 1s;
     }
@@ -49,7 +62,7 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 3.84px;
+        height: 3px;
         left: 0;
         transition: 1s;
         background-color: #fff;
@@ -77,20 +90,63 @@
         background-color: #fff;
     }
     ul.main-nav {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         position: fixed;
+        align-items: flex-start;
         left: -100%;
         top: 0;
         height: 100%;
         width: 100%;
         background-color: #242B33;
         z-index: 2;
-        padding-top: 125px;
-        padding-left: 20px;
+        padding-top: 155px;
+        padding-left: 40px;
         transition: 1s;
+        overflow: scroll;
     }
     ul.main-nav.active {
         left: 0;
         transition: 1s;
+    }
+    ul.main-nav li.main-nav-item {
+    border: none;
+    text-align: left;
+    width: 100px;
+    }
+    .main-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 17px 20px;
+    }
+    p.text-main-menu {
+        display: inline-block;
+        font-size: 33px;
+        font-family: "BebasNeue";
+        color: #fff;
+        line-height: 0.576;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    form.header-form {
+        position: fixed;
+        width: 50%;
+        padding-top: 125px;
+        left: -100%;
+        padding-left: 40px;
+        
+    }
+    form.header-form svg {
+        display: none;
+    }
+    form.header-form.active {
+        transition: 1s;
+        left: 0;
+    }
+    form.header-form input {
+        width: 100%;
     }
 }

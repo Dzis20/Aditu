@@ -6,7 +6,6 @@ body {
     color: grey;
     line-height: 1.647;
 }
-  
 .container {
     max-width: 1584px;
     margin: 0 auto;
@@ -20,7 +19,6 @@ h1 {
     color: rgb(255, 255, 255);
     line-height: 0.885;
 }
-  
 h2.section-title {
     font-size: 31px;
     font-family: 'Bebas Neue', cursive;
@@ -38,5 +36,91 @@ span.for-title {
     font-weight: bold;
     margin-bottom: 60px;
 }
+/* Header */
+.header {
+    padding: 22px 0 25px 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+p.logo {
+    font-size: 49px;
+    font-family: "Lobster1.4";
+    color: rgb(60, 195, 181);
+    line-height: 0.388;
+}
+form.header-form {
+    position: relative;
+    z-index: 3;
+}
+form.header-form input {
+    width: 438px;
+    height: 35px;
+    border: 1px solid rgb(225, 225, 225);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    
+}
+form.header-form input:active {
+    border: none;
+}
+form.header-form input:focus + svg {
+    display: none;
+}
+form.header-form svg {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+a.basket-link {
+    display: flex;
+    align-items: center;
+    font-size: 33px;
+    font-family: "BebasNeue";
+    color: rgb(161, 161, 161);
+    line-height: 0.576;
+    z-index: 3;
+}
+a.basket-link img {
+    margin-right: 15px;
+}
+/*Main*/
+.main {
+    background-color: #4ccfc1;
+}
+ul.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+ul.main-nav li.main-nav-item {
+    font-size: 21px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    width: 10%;
+    text-align: center;
+    padding: 0 20px;
+    border-left: 2px solid #fff;
+}
+ul.main-nav li.main-nav-item:first-child {
+    padding-left: 0;
+    border: none;
+}
+ul.main-nav li.main-nav-item:last-child {
+    padding-right: 0;
+}
+ul.main-nav li.main-nav-item a {
+    color: #fff;
+}
+p.text-main-menu {
+    display: none;
+}
+/* Slider */
+.swiper-container {
+    width: 100%;
+    height: 448px;
+}
 
-/* npm install normalize.css */
