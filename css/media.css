@@ -127,7 +127,9 @@
         color: #fff;
         line-height: 0.576;
     }
-    
+    .special-item {
+        width: 50%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -166,6 +168,15 @@
     form.header-form input {
         width: 100%;
     }
+    .product-item {
+        width: 45%;
+    }
+}
+@media (max-width: 700px) {
+    .special-item {
+        width: 100%;
+        justify-content: center;
+    }
 }
 @media (max-width: 650px) {
     .swiper-container {
@@ -180,7 +191,12 @@
     .slide-content img {
         padding-right: 0;
     }
+    .product-item {
+        width: 100%;
+    }
 }
-@media (max-width: 500px) {
-
+@media (max-width: 550px) {
+    .product-item-price a {
+        font-size: 14px;
+    }
 }
